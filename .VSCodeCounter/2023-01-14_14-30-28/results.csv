@@ -1,0 +1,36 @@
+"filename", "language", "JavaScript", "JSON", "TypeScript React", "JSON with Comments", "CSS", "Markdown", "XML", "Environment Variables", "JavaScript React", "comment", "blank", "total"
+"/home/oussema/Documents/elbaraka/.eslintrc.json", "JSON", 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/home/oussema/Documents/elbaraka/README.md", "Markdown", 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 16, 37
+"/home/oussema/Documents/elbaraka/components/Footer.tsx", "TypeScript React", 0, 0, 91, 0, 0, 0, 0, 0, 0, 0, 4, 95
+"/home/oussema/Documents/elbaraka/components/Navbar.tsx", "TypeScript React", 0, 0, 149, 0, 0, 0, 0, 0, 0, 15, 24, 188
+"/home/oussema/Documents/elbaraka/components/Sidebar.tsx", "TypeScript React", 0, 0, 150, 0, 0, 0, 0, 0, 0, 1, 9, 160
+"/home/oussema/Documents/elbaraka/components/TopNav.tsx", "TypeScript React", 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 4, 16
+"/home/oussema/Documents/elbaraka/components/layout/default.tsx", "TypeScript React", 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 9, 25
+"/home/oussema/Documents/elbaraka/components/layout/withSidebar.tsx", "TypeScript React", 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 3, 16
+"/home/oussema/Documents/elbaraka/config/nodemailer.js", "JavaScript", 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 17
+"/home/oussema/Documents/elbaraka/config/theme.js", "JavaScript", 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 10
+"/home/oussema/Documents/elbaraka/lib/api.js", "JavaScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9
+"/home/oussema/Documents/elbaraka/next.config.js", "JavaScript", 4, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 7
+"/home/oussema/Documents/elbaraka/package-lock.json", "JSON", 0, 6371, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6372
+"/home/oussema/Documents/elbaraka/package.json", "JSON", 0, 35, 0, 0, 0, 0, 0, 0, 0, 0, 1, 36
+"/home/oussema/Documents/elbaraka/pages/About.tsx", "TypeScript React", 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 2, 10
+"/home/oussema/Documents/elbaraka/pages/Contact.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 187, 0, 13, 200
+"/home/oussema/Documents/elbaraka/pages/Home.tsx", "TypeScript React", 0, 0, 104, 0, 0, 0, 0, 0, 0, 0, 16, 120
+"/home/oussema/Documents/elbaraka/pages/Produits/chauffage_solaire.tsx", "TypeScript React", 0, 0, 98, 0, 0, 0, 0, 0, 0, 0, 9, 107
+"/home/oussema/Documents/elbaraka/pages/Produits/photovoltaiques.tsx", "TypeScript React", 0, 0, 99, 0, 0, 0, 0, 0, 0, 0, 10, 109
+"/home/oussema/Documents/elbaraka/pages/Produits/pompe.tsx", "TypeScript React", 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 10, 95
+"/home/oussema/Documents/elbaraka/pages/Produits/produits.tsx", "TypeScript React", 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 13, 45
+"/home/oussema/Documents/elbaraka/pages/_app.tsx", "TypeScript React", 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 11, 27
+"/home/oussema/Documents/elbaraka/pages/_document.tsx", "TypeScript React", 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 2, 14
+"/home/oussema/Documents/elbaraka/pages/api/Contact.js", "JavaScript", 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 52
+"/home/oussema/Documents/elbaraka/pages/index.tsx", "TypeScript React", 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 4, 22
+"/home/oussema/Documents/elbaraka/postcss.config.js", "JavaScript", 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"/home/oussema/Documents/elbaraka/public/first.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/home/oussema/Documents/elbaraka/public/second.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/home/oussema/Documents/elbaraka/public/third.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/home/oussema/Documents/elbaraka/sample.env", "Environment Variables", 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 3
+"/home/oussema/Documents/elbaraka/styles/Home.module.css", "CSS", 0, 0, 0, 0, 236, 0, 0, 0, 0, 5, 38, 279
+"/home/oussema/Documents/elbaraka/styles/globals.css", "CSS", 0, 0, 0, 0, 91, 0, 0, 0, 0, 6, 15, 112
+"/home/oussema/Documents/elbaraka/tailwind.config.js", "JavaScript", 14, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 16
+"/home/oussema/Documents/elbaraka/tsconfig.json", "JSON with Comments", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 1, 21
+"Total", "-", 99, 6409, 903, 20, 327, 21, 3, 2, 187, 29, 233, 8233
