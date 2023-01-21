@@ -45,7 +45,7 @@ const Forgot_pass = () => {
           />
         </FormControl>
         <Stack spacing={6}>
-            <Link href='/Admin/VerifyEmail'>
+            <Link href='/admin/VerifyEmail'>
           <Button
             bg={'blue.400'}
             color={'white'}

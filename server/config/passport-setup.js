@@ -6,71 +6,72 @@ const User = require('../models/User')
 
 passport.serializeUser(function(user, done) {
     done(null, user.id);
+    console.log("serialized user")
   });
   
   passport.deserializeUser(function(id, done) {
     User.findById(id, function(err, user) {
+    console.log("deserialized user")
       done(err, user);
     });
   });
  
 // register user
-passport.use('local.signup', new localStrategy({
-    usernameField : 'email',
-    passwordField: 'password',
-    passReqToCallback: true
-}, (req,email,password, done)=> {
-        User.findOne({email: email}, (err,user)=> {
-            if(err) {
-                console.log(err)
-                return done(err)
-            }
-            if(user) {
-                console.log("user")
-                return done(null, false,{ message: 'deja mawjod' })
-            }
+// passport.use('local.signup', new localStrategy({
+//     usernameField : 'email',
+//     passwordField: 'password',
+//     passReqToCallback: true
+// }, (req,email,password, done)=> {
+//         User.findOne({email: email}, (err,user)=> {
+//             if(err) {
+//                 console.log(err)
+//                 return done(err)
+//             }
+//             if(user) {
+//                 console.log("user")
+//                 return done(null, false,{ message: 'deja mawjod' })
+//             }
 
-            if (!user) {
-                console.log("c bn")
-                //create user
-                let newUser = new User()
-                newUser.email = req.body.email
-                newUser.password = newUser.hashPassword(req.body.password),
-                newUser.save ((err,user)=> {
-                    if(!err) {
-                        return done(null, user, { message: 'c bn' })
-                    } else {
-                        console.log(err)
-                    }
-                })
-            }
-        })
-}))
+//             if (!user) {
+//                 console.log("c bn")
+                
+//                 let newUser = new User()
+//                 newUser.email = req.body.email
+//                 newUser.password = newUser.hashPassword(req.body.password),
+//                 newUser.save ((err,user)=> {
+//                     if(!err) {
+//                         return done(null, user, { message: 'c bn' })
+//                     } else {
+//                         console.log(err)
+//                     }
+//                 })
+//             }
+//         })
+// }))
 
 //login strategy
 
 passport.use('local.login', new localStrategy({
     usernameField:'email',
     passwordField: 'password',
-    passReqToCallback: true
-}, (req,email,password, done)=> {
+}, (email,password, done)=> {
 
     //find user
     User.findOne({email: email}, (err,user)=> {
 
         if (err) {
-            return done(null, false, req.flash('error', 'Something wrong happened'))
+            return done(err)
         } 
         if(!user) {
-            return done(null, false, req.flash('error', 'user was not found'))
+            return done(null, false,{'error': 'user was not found'})
         }
         if (user) {
             if (user.comparePasswords(password, user.password)) {
 
-                return done(null,user, req.flash('info', ' Welcome'))
+                return done(null,user,{'info' : ' Welcome'})
 
             } else {
-                return done(null,false, req.flash('error', ' password is wrong'))
+                return done(null,false, {'error' : ' password is wrong'})
 
             }
         }

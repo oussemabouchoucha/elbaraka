@@ -1,0 +1,99 @@
+Date : 2023-01-19 23:17:34
+Directory : /home/oussema/Documents/elbaraka
+Total : 49 files,  10615 codes, 40 comments, 332 blanks, all 10987 lines
+
+Languages
++-----------------------+------------+------------+------------+------------+------------+
+| language              | files      | code       | comment    | blank      | total      |
++-----------------------+------------+------------+------------+------------+------------+
+| JSON                  |          5 |      8,151 |          0 |          5 |      8,156 |
+| TypeScript React      |         20 |      1,257 |         16 |        164 |      1,437 |
+| JavaScript React      |          2 |        508 |          2 |         34 |        544 |
+| CSS                   |          2 |        327 |         11 |         53 |        391 |
+| JavaScript            |         14 |        326 |         11 |         58 |        395 |
+| Markdown              |          1 |         21 |          0 |         16 |         37 |
+| JSON with Comments    |          1 |         20 |          0 |          1 |         21 |
+| XML                   |          3 |          3 |          0 |          0 |          3 |
+| Environment Variables |          1 |          2 |          0 |          1 |          3 |
++-----------------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                  | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                     |         49 |     10,615 |         40 |        332 |     10,987 |
+| . (Files)                                                             |          9 |      6,817 |          2 |         25 |      6,844 |
+| components                                                            |          6 |        433 |         16 |         54 |        503 |
+| components (Files)                                                    |          4 |        404 |         16 |         42 |        462 |
+| components/layout                                                     |          2 |         29 |          0 |         12 |         41 |
+| config                                                                |          2 |         21 |          0 |          6 |         27 |
+| lib                                                                   |          1 |          9 |          0 |          0 |          9 |
+| pages                                                                 |         17 |      1,379 |          2 |        150 |      1,531 |
+| pages (Files)                                                         |          7 |        668 |          2 |         71 |        741 |
+| pages/admin                                                           |          4 |        233 |          0 |         11 |        244 |
+| pages/api                                                             |          1 |         47 |          0 |          6 |         53 |
+| pages/produits                                                        |          5 |        431 |          0 |         62 |        493 |
+| public                                                                |          3 |          3 |          0 |          0 |          3 |
+| server                                                                |          9 |      1,626 |          9 |         44 |      1,679 |
+| server (Files)                                                        |          3 |      1,433 |          4 |         13 |      1,450 |
+| server/config                                                         |          2 |         70 |          5 |         12 |         87 |
+| server/models                                                         |          2 |         69 |          0 |          8 |         77 |
+| server/routes                                                         |          2 |         54 |          0 |         11 |         65 |
+| styles                                                                |          2 |        327 |         11 |         53 |        391 |
++-----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------+-----------------------+------------+------------+------------+------------+
+| filename                                                              | language              | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------+-----------------------+------------+------------+------------+------------+
+| /home/oussema/Documents/elbaraka/.eslintrc.json                       | JSON                  |          3 |          0 |          1 |          4 |
+| /home/oussema/Documents/elbaraka/README.md                            | Markdown              |         21 |          0 |         16 |         37 |
+| /home/oussema/Documents/elbaraka/components/Footer.tsx                | TypeScript React      |         93 |          0 |          5 |         98 |
+| /home/oussema/Documents/elbaraka/components/Navbar.tsx                | TypeScript React      |        149 |         15 |         24 |        188 |
+| /home/oussema/Documents/elbaraka/components/Sidebar.tsx               | TypeScript React      |        150 |          1 |          9 |        160 |
+| /home/oussema/Documents/elbaraka/components/TopNav.tsx                | TypeScript React      |         12 |          0 |          4 |         16 |
+| /home/oussema/Documents/elbaraka/components/layout/default.tsx        | TypeScript React      |         16 |          0 |          9 |         25 |
+| /home/oussema/Documents/elbaraka/components/layout/withSidebar.tsx    | TypeScript React      |         13 |          0 |          3 |         16 |
+| /home/oussema/Documents/elbaraka/config/nodemailer.js                 | JavaScript            |         14 |          0 |          3 |         17 |
+| /home/oussema/Documents/elbaraka/config/theme.js                      | JavaScript            |          7 |          0 |          3 |         10 |
+| /home/oussema/Documents/elbaraka/lib/api.js                           | JavaScript            |          9 |          0 |          0 |          9 |
+| /home/oussema/Documents/elbaraka/next.config.js                       | JavaScript            |          4 |          1 |          2 |          7 |
+| /home/oussema/Documents/elbaraka/package-lock.json                    | JSON                  |      6,709 |          0 |          1 |      6,710 |
+| /home/oussema/Documents/elbaraka/package.json                         | JSON                  |         39 |          0 |          1 |         40 |
+| /home/oussema/Documents/elbaraka/pages/Home.tsx                       | TypeScript React      |        104 |          0 |         18 |        122 |
+| /home/oussema/Documents/elbaraka/pages/_app.tsx                       | TypeScript React      |         18 |          0 |         11 |         29 |
+| /home/oussema/Documents/elbaraka/pages/_document.tsx                  | TypeScript React      |         12 |          0 |          2 |         14 |
+| /home/oussema/Documents/elbaraka/pages/about.tsx                      | TypeScript React      |          8 |          0 |          2 |         10 |
+| /home/oussema/Documents/elbaraka/pages/admin/VerifyEmail.tsx          | TypeScript React      |         68 |          0 |          1 |         69 |
+| /home/oussema/Documents/elbaraka/pages/admin/dashboard.tsx            | TypeScript React      |         36 |          0 |          5 |         41 |
+| /home/oussema/Documents/elbaraka/pages/admin/forgot_pass.tsx          | TypeScript React      |         64 |          0 |          1 |         65 |
+| /home/oussema/Documents/elbaraka/pages/admin/index.tsx                | TypeScript React      |         65 |          0 |          4 |         69 |
+| /home/oussema/Documents/elbaraka/pages/api/Contact.js                 | JavaScript            |         47 |          0 |          6 |         53 |
+| /home/oussema/Documents/elbaraka/pages/contact.jsx                    | JavaScript React      |        217 |          0 |         14 |        231 |
+| /home/oussema/Documents/elbaraka/pages/index.tsx                      | TypeScript React      |         18 |          0 |          4 |         22 |
+| /home/oussema/Documents/elbaraka/pages/produits/chauffage_solaire.tsx | TypeScript React      |         98 |          0 |          9 |        107 |
+| /home/oussema/Documents/elbaraka/pages/produits/chauffe_eau.tsx       | TypeScript React      |        117 |          0 |         20 |        137 |
+| /home/oussema/Documents/elbaraka/pages/produits/photovoltaiques.tsx   | TypeScript React      |         99 |          0 |         10 |        109 |
+| /home/oussema/Documents/elbaraka/pages/produits/pompe.tsx             | TypeScript React      |         85 |          0 |         10 |         95 |
+| /home/oussema/Documents/elbaraka/pages/produits/produits.tsx          | TypeScript React      |         32 |          0 |         13 |         45 |
+| /home/oussema/Documents/elbaraka/pages/test.jsx                       | JavaScript React      |        291 |          2 |         20 |        313 |
+| /home/oussema/Documents/elbaraka/postcss.config.js                    | JavaScript            |          5 |          0 |          1 |          6 |
+| /home/oussema/Documents/elbaraka/public/first.svg                     | XML                   |          1 |          0 |          0 |          1 |
+| /home/oussema/Documents/elbaraka/public/second.svg                    | XML                   |          1 |          0 |          0 |          1 |
+| /home/oussema/Documents/elbaraka/public/third.svg                     | XML                   |          1 |          0 |          0 |          1 |
+| /home/oussema/Documents/elbaraka/sample.env                           | Environment Variables |          2 |          0 |          1 |          3 |
+| /home/oussema/Documents/elbaraka/server/config/database.js            | JavaScript            |          9 |          0 |          0 |          9 |
+| /home/oussema/Documents/elbaraka/server/config/passport-setup.js      | JavaScript            |         61 |          5 |         12 |         78 |
+| /home/oussema/Documents/elbaraka/server/index.js                      | JavaScript            |         33 |          4 |         11 |         48 |
+| /home/oussema/Documents/elbaraka/server/models/Devis.js               | JavaScript            |         49 |          0 |          3 |         52 |
+| /home/oussema/Documents/elbaraka/server/models/User.js                | JavaScript            |         20 |          0 |          5 |         25 |
+| /home/oussema/Documents/elbaraka/server/package-lock.json             | JSON                  |      1,376 |          0 |          1 |      1,377 |
+| /home/oussema/Documents/elbaraka/server/package.json                  | JSON                  |         24 |          0 |          1 |         25 |
+| /home/oussema/Documents/elbaraka/server/routes/devis.route.js         | JavaScript            |         44 |          0 |          7 |         51 |
+| /home/oussema/Documents/elbaraka/server/routes/user.route.js          | JavaScript            |         10 |          0 |          4 |         14 |
+| /home/oussema/Documents/elbaraka/styles/Home.module.css               | CSS                   |        236 |          5 |         38 |        279 |
+| /home/oussema/Documents/elbaraka/styles/globals.css                   | CSS                   |         91 |          6 |         15 |        112 |
+| /home/oussema/Documents/elbaraka/tailwind.config.js                   | JavaScript            |         14 |          1 |          1 |         16 |
+| /home/oussema/Documents/elbaraka/tsconfig.json                        | JSON with Comments    |         20 |          0 |          1 |         21 |
+| Total                                                                 |                       |     10,615 |         40 |        332 |     10,987 |
++-----------------------------------------------------------------------+-----------------------+------------+------------+------------+------------+

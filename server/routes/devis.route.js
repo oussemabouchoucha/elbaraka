@@ -2,6 +2,11 @@ const express = require('express')
 const router = express.Router()
 const Devis = require('../models/Devis')
 
+isAuthenticated = (req,res,next) => {
+    if (req.isAuthenticated()) return next()
+    res.json({message: "Please login",
+        status: 401})
+}
 
 router.post('/save',(req,res)=> {
     let newDevis = new Devis({
@@ -25,7 +30,7 @@ router.post('/save',(req,res)=> {
     })
 })
 
-router.get('/getAll',(req,res)=> {
+router.get('/getAll',isAuthenticated,(req,res)=> {
     Devis.find({},(err,devis)=> {
         if(err) {
             console.log(err)

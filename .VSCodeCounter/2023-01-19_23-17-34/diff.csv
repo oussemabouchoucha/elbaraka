@@ -1,0 +1,35 @@
+"filename", "language", "JSON", "JavaScript", "JavaScript React", "TypeScript React", "comment", "blank", "total"
+"/home/oussema/Documents/elbaraka/components/Footer.tsx", "TypeScript React", 0, 0, 0, 2, 0, 1, 3
+"/home/oussema/Documents/elbaraka/package-lock.json", "JSON", 338, 0, 0, 0, 0, 0, 338
+"/home/oussema/Documents/elbaraka/package.json", "JSON", 4, 0, 0, 0, 0, 0, 4
+"/home/oussema/Documents/elbaraka/pages/About.tsx", "TypeScript React", 0, 0, 0, -8, 0, -2, -10
+"/home/oussema/Documents/elbaraka/pages/Contact.jsx", "JavaScript React", 0, 0, -187, 0, 0, -13, -200
+"/home/oussema/Documents/elbaraka/pages/Home.tsx", "TypeScript React", 0, 0, 0, 0, 0, 2, 2
+"/home/oussema/Documents/elbaraka/pages/Produits/chauffage_solaire.tsx", "TypeScript React", 0, 0, 0, -98, 0, -9, -107
+"/home/oussema/Documents/elbaraka/pages/Produits/photovoltaiques.tsx", "TypeScript React", 0, 0, 0, -99, 0, -10, -109
+"/home/oussema/Documents/elbaraka/pages/Produits/pompe.tsx", "TypeScript React", 0, 0, 0, -85, 0, -10, -95
+"/home/oussema/Documents/elbaraka/pages/Produits/produits.tsx", "TypeScript React", 0, 0, 0, -32, 0, -13, -45
+"/home/oussema/Documents/elbaraka/pages/_app.tsx", "TypeScript React", 0, 0, 0, 2, 0, 0, 2
+"/home/oussema/Documents/elbaraka/pages/about.tsx", "TypeScript React", 0, 0, 0, 8, 0, 2, 10
+"/home/oussema/Documents/elbaraka/pages/admin/VerifyEmail.tsx", "TypeScript React", 0, 0, 0, 68, 0, 1, 69
+"/home/oussema/Documents/elbaraka/pages/admin/dashboard.tsx", "TypeScript React", 0, 0, 0, 36, 0, 5, 41
+"/home/oussema/Documents/elbaraka/pages/admin/forgot_pass.tsx", "TypeScript React", 0, 0, 0, 64, 0, 1, 65
+"/home/oussema/Documents/elbaraka/pages/admin/index.tsx", "TypeScript React", 0, 0, 0, 65, 0, 4, 69
+"/home/oussema/Documents/elbaraka/pages/api/Contact.js", "JavaScript", 0, 1, 0, 0, 0, 0, 1
+"/home/oussema/Documents/elbaraka/pages/contact.jsx", "JavaScript React", 0, 0, 217, 0, 0, 14, 231
+"/home/oussema/Documents/elbaraka/pages/produits/chauffage_solaire.tsx", "TypeScript React", 0, 0, 0, 98, 0, 9, 107
+"/home/oussema/Documents/elbaraka/pages/produits/chauffe_eau.tsx", "TypeScript React", 0, 0, 0, 117, 0, 20, 137
+"/home/oussema/Documents/elbaraka/pages/produits/photovoltaiques.tsx", "TypeScript React", 0, 0, 0, 99, 0, 10, 109
+"/home/oussema/Documents/elbaraka/pages/produits/pompe.tsx", "TypeScript React", 0, 0, 0, 85, 0, 10, 95
+"/home/oussema/Documents/elbaraka/pages/produits/produits.tsx", "TypeScript React", 0, 0, 0, 32, 0, 13, 45
+"/home/oussema/Documents/elbaraka/pages/test.jsx", "JavaScript React", 0, 0, 291, 0, 2, 20, 313
+"/home/oussema/Documents/elbaraka/server/config/database.js", "JavaScript", 0, 9, 0, 0, 0, 0, 9
+"/home/oussema/Documents/elbaraka/server/config/passport-setup.js", "JavaScript", 0, 61, 0, 0, 5, 12, 78
+"/home/oussema/Documents/elbaraka/server/index.js", "JavaScript", 0, 33, 0, 0, 4, 11, 48
+"/home/oussema/Documents/elbaraka/server/models/Devis.js", "JavaScript", 0, 49, 0, 0, 0, 3, 52
+"/home/oussema/Documents/elbaraka/server/models/User.js", "JavaScript", 0, 20, 0, 0, 0, 5, 25
+"/home/oussema/Documents/elbaraka/server/package-lock.json", "JSON", 1376, 0, 0, 0, 0, 1, 1377
+"/home/oussema/Documents/elbaraka/server/package.json", "JSON", 24, 0, 0, 0, 0, 1, 25
+"/home/oussema/Documents/elbaraka/server/routes/devis.route.js", "JavaScript", 0, 44, 0, 0, 0, 7, 51
+"/home/oussema/Documents/elbaraka/server/routes/user.route.js", "JavaScript", 0, 10, 0, 0, 0, 4, 14
+"Total", "-", 1742, 227, 321, 354, 11, 99, 2754

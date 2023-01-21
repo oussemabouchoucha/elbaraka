@@ -1,5 +1,9 @@
 const mongoose = require("mongoose")
-let db = mongoose.connect('mongodb+srv://elbarakaServices:e8fiEPsXWtkKnJor@cluster0.rymsrzc.mongodb.net/elbarkaDb?retryWrites=true&w=majority',
+const dotenv = require('dotenv')
+dotenv.config()
+const {DB_PASS} = process.env
+
+let db = mongoose.connect(`mongodb+srv://elbarakaServices:${DB_PASS}@cluster0.rymsrzc.mongodb.net/elbarkaDb?retryWrites=true&w=majority`,
 { useNewUrlParser: true, useUnifiedTopology: true }, (err)=>{
     if(err){
         console.log(err)

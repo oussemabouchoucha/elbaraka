@@ -28,11 +28,11 @@ interface LinkItemProps {
   link: string;
 }
 const LinkItems: Array<LinkItemProps> = [
-  { name: 'photovoltaïques', icon: FiCornerDownRight, link: '/Produits/photovoltaiques'},
-  { name: 'pompe à chaleur', icon: FiCornerDownRight, link: '/Produits/pompe' },
-  { name: 'chauffage solaire / chauffe-eau solaire ', icon: FiCornerDownRight, link: '/Produits/chauffage_solaire' },
-  { name: 'Chauffe-eau thermodynamique', icon: FiCornerDownRight, link: '/Produits/chauffe_eau' },
-  { name: 'isolation', icon: FiCornerDownRight, link: '/Produits/photovoltaiques' },
+  { name: 'Photovoltaïques', icon: FiCornerDownRight, link: '/produits/photovoltaiques'},
+  { name: 'Pompe à chaleur', icon: FiCornerDownRight, link: '/produits/pompe' },
+  { name: 'Chauffage solaire / chauffe-eau solaire ', icon: FiCornerDownRight, link: '/produits/chauffage_solaire' },
+  { name: 'Chauffe-eau thermodynamique', icon: FiCornerDownRight, link: '/produits/chauffe_eau' },
+  { name: 'Isolation', icon: FiCornerDownRight, link: '/produits/photovoltaiques' },
 ];
 
 export default function produits({ children }: { children: ReactNode }) {

@@ -29,7 +29,7 @@ function Navbar() {
 									</Link>
 									
 									
-									<Link href="/About"
+									<Link href="/about"
 										
 										className="text-decoration-none cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
 									>
@@ -53,13 +53,13 @@ function Navbar() {
 									</Link>
 										
 
-									<Link href="/Produits/produits"		
+									<Link href="/produits/produits"		
 										className="text-decoration-none cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
 									>
 										Produits
 									</Link>
 
-									<Link href="Services"
+									<Link href="services"
 										
 										className="text-decoration-none cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
 									>
@@ -67,7 +67,7 @@ function Navbar() {
 									</Link>
 
 									<Link
-										href="/Contact"
+										href="/contact"
 										
 										className="text-decoration-none cursor-pointer bg-blue-600 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-black"
 									>
@@ -146,7 +146,7 @@ function Navbar() {
 									Home
 								</Link>
 								<Link
-									href="/About"
+									href="/about"
 									
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
@@ -154,14 +154,14 @@ function Navbar() {
 								</Link>
 
 								<Link
-									href="/Produits/produits"
+									href="/produits/produits"
 									
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
 									Produits
 								</Link>
 								<Link
-									href="/Services"
+									href="/services"
 									
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
@@ -169,7 +169,7 @@ function Navbar() {
 								</Link>
 
 								<Link
-									href="/Contact"
+									href="/contact"
 									
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>

@@ -6,7 +6,9 @@ const session = require('express-session')
 const passport = require('passport')
 const passportSetup = require('./config/passport-setup')
 const cors = require('cors')
-
+const dotenv = require('dotenv')
+dotenv.config()
+const {PORT} = process.env
 
 // bring body parser 
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -43,6 +45,6 @@ const devis = require('./routes/devis.route')
 app.use('/devis', devis)
 
 
-app.listen(5000,()=>{
-    console.log('app is working on port 5000');
+app.listen(PORT,()=>{
+    console.log(`app is working on port ${PORT}`);
 })

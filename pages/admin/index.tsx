@@ -10,9 +10,22 @@ import {
     Text,
     useColorModeValue,
   } from '@chakra-ui/react';
+import axios from 'axios';
 import Link from 'next/link';
-
+import { useState } from 'react';
 const Login = () => {
+    const [email, setEmail ] = useState("")
+    const [password, setPassword ] = useState("")
+    const loginFunction = async () =>{
+      const res_ax = await axios({
+        url : 'http://localhost:5000/users/login', 
+        method: 'post',
+        data:{
+          email: email,
+          password: password
+        }
+      }).then(res => console.log(res.data));
+    }
     return (  
         <>
          <Flex
@@ -33,11 +46,11 @@ const Login = () => {
           <Stack spacing={4}>
             <FormControl id="email">
               <FormLabel>Email address</FormLabel>
-              <Input type="email" />
+              <Input type="email" onChange={(e) => setEmail(e.target.value)} />
             </FormControl>
             <FormControl id="password">
               <FormLabel>Password</FormLabel>
-              <Input type="password" />
+              <Input type="password" onChange={(e) => setPassword(e.target.value)}/>
             </FormControl>
             <Stack spacing={10}>
               <Stack
@@ -45,10 +58,10 @@ const Login = () => {
                 align={'start'}
                 justify={'space-between'}>
                 
-                <Link className='text-blue-400' href='/Admin/forgot_pass' >Forgot password?</Link>
+                <Link className='text-blue-400' href='/admin/forgot_pass' >Forgot password?</Link>
               </Stack>
-              <Link href='/Admin/VerifyEmail'>
               <Button
+                onClick={()=> loginFunction()}
                 bg={'blue.400'}
                 color={'white'}
                 _hover={{
@@ -56,7 +69,6 @@ const Login = () => {
                 }}>
                 Sign in
               </Button>
-              </Link>
             </Stack>
           </Stack>
         </Box>
