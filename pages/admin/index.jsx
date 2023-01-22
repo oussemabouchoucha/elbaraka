@@ -7,15 +7,26 @@ import {
     Stack,
     Button,
     Heading,
-    Text,
+    Alert,
+    AlertIcon,
+    AlertTitle,
     useColorModeValue,
   } from '@chakra-ui/react';
 import axios from 'axios';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useRouter } from 'next/router';
+import { useState,useEffect } from 'react';
 const Login = () => {
+    const router = useRouter();
+    useEffect(() => {
+      const permission = localStorage.getItem("login")
+      if(permission && permission === "true"){
+        router.push("/admin/dashboard")
+      }
+    }, [router]);
     const [email, setEmail ] = useState("")
     const [password, setPassword ] = useState("")
+    const [message, setMessage ] = useState()
     const loginFunction = async () =>{
       const res_ax = await axios({
         url : 'http://localhost:5000/users/login', 
@@ -24,7 +35,16 @@ const Login = () => {
           email: email,
           password: password
         }
-      }).then(res => console.log(res.data));
+      }).then(res => {
+        if(res?.data.info){
+          localStorage.setItem("login", "true")
+          setMessage()
+          router.push("/admin/dashboard")
+        }else{
+          localStorage.setItem("login", "false")
+          setMessage(res.data)
+        }
+      });
     }
     return (  
         <>
@@ -38,6 +58,14 @@ const Login = () => {
           <Heading fontSize={'4xl'}>Sign in to your account</Heading>
 
         </Stack>
+        {
+          message ? <> 
+          <Alert status='error'>
+              <AlertIcon />
+              <AlertTitle> {message.message || message.error} </AlertTitle>
+          </Alert> </> : 
+          <></>
+        }
         <Box
           rounded={'lg'}
           bg={useColorModeValue('white', 'gray.700')}
@@ -46,11 +74,11 @@ const Login = () => {
           <Stack spacing={4}>
             <FormControl id="email">
               <FormLabel>Email address</FormLabel>
-              <Input type="email" onChange={(e) => setEmail(e.target.value)} />
+              <Input type="email" defaultValue="" onChange={(e) => setEmail(e.target.value)} />
             </FormControl>
             <FormControl id="password">
               <FormLabel>Password</FormLabel>
-              <Input type="password" onChange={(e) => setPassword(e.target.value)}/>
+              <Input type="password" defaultValue="" onChange={(e) => setPassword(e.target.value)}/>
             </FormControl>
             <Stack spacing={10}>
               <Stack

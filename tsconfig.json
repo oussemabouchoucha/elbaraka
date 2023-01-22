@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "tailwind.config.js", "pages/Contact/Contact.jsx", "pages/_app.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "tailwind.config.js", "pages/Contact/Contact.jsx", "pages/_app.jsx", "pages/admin/dashboard.jsx", "pages/admin/index.jsx", "pages/admin/VerifyEmail.jsx"],
   "exclude": ["node_modules"]
 }

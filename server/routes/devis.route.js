@@ -30,7 +30,7 @@ router.post('/save',(req,res)=> {
     })
 })
 
-router.get('/getAll',isAuthenticated,(req,res)=> {
+router.get('/getAll',(req,res)=> {
     Devis.find({},(err,devis)=> {
         if(err) {
             console.log(err)

@@ -7,12 +7,36 @@ import {
     Stack,
     Text,
     useColorModeValue,
+    Alert,
+    AlertIcon,
+    AlertTitle,
+    AlertDescription,
   } from '@chakra-ui/react';
 import Link from 'next/link';
+import axios from 'axios';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
   type ForgotPasswordFormInputs = {
     email: string;
   };
 const Forgot_pass = () => {
+    const router = useRouter();
+    const [email, setEmail] = useState()
+    const [message, setMessage] = useState()
+    const forgetFunction = async () => {
+      const res_ax = await axios({
+        url : 'http://localhost:5000/users/forgotPassword', 
+        method: 'post',
+        data:{
+          email: email
+        }
+      }).then(res => {setMessage(res.data.message)
+        localStorage.setItem("email", email || "")
+        if(res.data.message == "Code reset password sent"){
+          router.push("/admin/VerifyEmail")
+        }
+      });
+    }
     return ( 
         <>
      <Flex
@@ -29,6 +53,19 @@ const Forgot_pass = () => {
         boxShadow={'lg'}
         p={6}
         my={12}>
+            {
+          message ? <>
+          {
+            message == "Code reset password sent" ? <Alert status='success'>
+            <AlertIcon />
+            <AlertTitle>{message}</AlertTitle>
+          </Alert> : <Alert status='error'>
+            <AlertIcon />
+            <AlertTitle>{message}</AlertTitle>
+            </Alert> 
+          }
+          </> : <></>
+        }
         <Heading lineHeight={1.1} fontSize={{ base: '2xl', md: '3xl' }}>
           Forgot your password?
         </Heading>
@@ -39,14 +76,15 @@ const Forgot_pass = () => {
         </Text>
         <FormControl id="email">
           <Input
+            onChange={(e: any)=> setEmail(e.target.value)}
             placeholder="your-email@example.com"
             _placeholder={{ color: 'gray.500' }}
             type="email"
           />
         </FormControl>
         <Stack spacing={6}>
-            <Link href='/admin/VerifyEmail'>
           <Button
+            onClick={() => forgetFunction()}
             bg={'blue.400'}
             color={'white'}
             _hover={{
@@ -54,7 +92,6 @@ const Forgot_pass = () => {
             }}>
             Request Reset
           </Button>
-          </Link>
         </Stack>
       </Stack>
     </Flex>

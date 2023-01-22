@@ -56,7 +56,7 @@ const Contact = () => {
           adresse: values.adresse,
           ville: values.ville,
           natel: values.natel,
-          sujet: values.sujet,
+          sujet: values.subject,
           message: values.message
         }
       }).then(res => console.log(res.data));

@@ -4,7 +4,7 @@ require('./config/database')
 const bodyParser = require('body-parser')
 const session = require('express-session')
 const passport = require('passport')
-const passportSetup = require('./config/passport-setup')
+require('./config/passport-setup')
 const cors = require('cors')
 const dotenv = require('dotenv')
 dotenv.config()
@@ -16,11 +16,11 @@ app.use(bodyParser.json())
 
 app.use(cors());
 
+// session config .
 app.use(session({
-    secret: 'lorem ipsum',
-    resave: false,
-    saveUninitialized: false,
-    cookie: {maxAge: 60000 * 15}
+    secret: 'secretcode',
+    saveUninitialized: true,
+    resave:true,
 }))
 
 // bring passport 
@@ -28,8 +28,14 @@ app.use(passport.initialize())
 app.use(passport.session())
 //store user object 
 
+app.use((req,res,next)=>{
+    next();
+})
+
+//store user object 
 app.get('*', (req,res,next)=> {
     res.locals.user = req.user || null
+    console.log(req.locals)
     next()
 })
 

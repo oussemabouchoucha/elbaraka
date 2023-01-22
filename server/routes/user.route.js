@@ -10,11 +10,12 @@ dotenv.config()
 
 isAuthenticated = (req,res,next) => {
     if (req.isAuthenticated()) return next()
-    res.json({message: "9ayed "})
+    res.json({message: "Please login",
+    status: 401})
 }
 
 
-const {EMAIL_PASS,EMAIL} = process.env
+const { EMAIL_PASS,EMAIL } = process.env
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -47,19 +48,24 @@ router.post('/login',(req,res,next)=>{
             user.isAuthenticated = true
             return res.json(info)
         })
-    })(req,res,next)
+    })(req, res, next)
 })
 
-router.delete("/logout",isAuthenticated, async(req,res)=>{
-    req.logout()
-    res.json({message: "Logged out"})
+router.delete("/logout", async(req,res)=>{
+    req.logout(function(err) {
+        if (err) { return next(err); }
+        res.json({message: "Logged out"})
+      });
+})
 
+router.post("/check",(req,res)=>{
+    res.json(req.isAuthenticated())
 })
 
 
 router.post('/forgotPassword',(req,res)=>{
     const filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    if (!filter.test(req.body.email)) response.json('please enter a valid email')
+    if (!filter.test(req.body.email)) res.json({message:'Please enter a valid email'})
     else {
         User.findOne({email: req.body.email},async (err,user)=>{
             if (err) throw err

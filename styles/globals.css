@@ -114,6 +114,17 @@ a {
   }
 }
 
-.link{
-  color: blue;
+.w-100{
+  width: 100% !important;
+}
+
+table{
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
 }

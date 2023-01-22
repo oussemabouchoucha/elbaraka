@@ -5,16 +5,16 @@ const User = require('../models/User')
 // saving user object in the session
 
 passport.serializeUser(function(user, done) {
-    done(null, user.id);
     console.log("serialized user")
-  });
+    done(null, user.id);
+});
   
-  passport.deserializeUser(function(id, done) {
+passport.deserializeUser(function(id, done) {
     User.findById(id, function(err, user) {
     console.log("deserialized user")
       done(err, user);
     });
-  });
+});
  
 // register user
 // passport.use('local.signup', new localStrategy({
