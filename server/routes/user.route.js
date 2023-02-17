@@ -92,7 +92,7 @@ router.post('/forgotPassword',(req,res)=>{
                     } else {
                     User.updateOne({email: req.body.email},{codeVerification: code}, (err)=>{
                         if (err) return res.json(err)
-                        res.json({message: "Code reset password sent"})
+                        res.json({message: "Mot de passe de réinitialisation du code envoyé"})
                     })
                     }
                 })

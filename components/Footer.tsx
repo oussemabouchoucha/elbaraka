@@ -51,46 +51,38 @@ export default function Footer() {
 								<h1 className=" font-bold text-xl cursor-pointer">
                 <Link href="/" scroll={true}>
 
-									ElBaraka<span className="text-blue-500">Services</span>
+                Energie<span className="text-blue-500">Devis</span>
                   </Link>
 								</h1>
 							</div>
             <Text fontSize={'sm'}>
-              © 2022 Chakra Templates. All rights reserved
+            Copyright © 2023 - Tous droits réservés.
             </Text>
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Product</ListHeader>
-            <Link href={'#'}>Overview</Link>
-            <Link href={'#'}>Features</Link>
-            <Link href={'#'}>Tutorials</Link>
-            <Link href={'#'}>Pricing</Link>
-            <Link href={'#'}>Releases</Link>
+            <ListHeader>Produit</ListHeader>
+            <Link href="../produits/photovoltaiques">Photovoltaïques</Link>
+            <Link href="../produits/pompe">Pompe à chaleur</Link>
+            {/* <Link href={'#'}>Chauffage solaire / chauffe-eau solaire</Link> */}
+            <Link href="../produits/chauffe_eau">Chauffe-eau thermodynamique</Link>
           </Stack>
+          {/* <Stack align={'flex-start'}>
+            <ListHeader>Société</ListHeader>
+            <Link href={'#'}>Qui sommes-nous ?</Link>
+           
+          </Stack> */}
           <Stack align={'flex-start'}>
-            <ListHeader>Company</ListHeader>
-            <Link href={'#'}>About</Link>
-            <Link href={'#'}>Press</Link>
-            <Link href={'#'}>Careers</Link>
-            <Link href={'#'}>Contact</Link>
-            <Link href={'#'}>Partners</Link>
+            <ListHeader>Contact</ListHeader>
+            <Link href="../contact">demande de devis</Link>
           </Stack>
-          <Stack align={'flex-start'}>
-            <ListHeader>Support</ListHeader>
-            <Link href={'#'}>Help Center</Link>
-            <Link href={'#'}>Terms of Service</Link>
-            <Link href={'#'}>Legal</Link>
-            <Link href={'#'}>Privacy Policy</Link>
-            <Link href={'#'}>Status</Link>
-          </Stack>
-          <Stack align={'flex-start'}>
+          {/* <Stack align={'flex-start'}>
             <ListHeader>Follow Us</ListHeader>
             <Link href={'#'}>Facebook</Link>
             <Link href={'#'}>Twitter</Link>
             <Link href={'#'}>Dribbble</Link>
             <Link href={'#'}>Instagram</Link>
             <Link href={'#'}>LinkedIn</Link>
-          </Stack>
+          </Stack> */}
         </SimpleGrid>
       </Container>
     </Box>

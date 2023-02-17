@@ -17,8 +17,10 @@ router.post('/save',(req,res)=> {
         adresse : req.body.adresse,
         ville: req.body.ville,
         natel: req.body.natel,
-        sujet: req.body.sujet,
-        message: req.body.message
+        message: req.body.message,
+        produit: req.body.produit,
+  
+
     })
 
     newDevis.save( (err)=> {

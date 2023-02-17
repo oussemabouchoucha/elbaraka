@@ -11,11 +11,11 @@ function Navbar() {
 			<nav className=" bg-light shadow-sm fixed w-full z-10">
 				<div className="w-full">
 					<div className="flex items-center h-20 w-full">
-						<div className="flex items-center  mx-10 justify-between w-full">
+						<div className="flex items-center  mx-20 justify-between w-full">
 							<Link href="/">
 							<div className="flex justify-center items-center flex-shrink-0 ">
 								<h1 className=" font-bold text-xl cursor-pointer">
-									ElBaraka<span className="text-blue-500">Services</span>
+								AlBaraka<span className="text-blue-500">Services</span>
 								</h1>
 							</div></Link>
 							<div className="hidden md:block">
@@ -25,46 +25,27 @@ function Navbar() {
 										
 										className=" text-decoration-none cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
 									>								
-										Acceil
+										Accueil
 									</Link>
 									
 									
-									<Link href="/about"
+									{/* <Link href="/about"
 										
 										className="text-decoration-none cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
 									>
-			{/* <NavDropdown
-              id="nav-dropdown"
-              title="About"
-              menuVariant="bleu"
-            >
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown> */}	
-										<pre>A Propos</pre>
+			
+										<pre>Qui sommes-nous ?</pre>
 										
-									</Link>
+									</Link> */}
 										
 
-									<Link href="/produits/produits"		
+									<Link href="/produits"		
 										className="text-decoration-none cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
 									>
 										Produits
 									</Link>
 
-									<Link href="services"
-										
-										className="text-decoration-none cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-									>
-										Services
-									</Link>
+								
 
 									<Link
 										href="/contact"
@@ -143,30 +124,24 @@ function Navbar() {
 									
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
-									Home
+									Accueil
 								</Link>
-								<Link
+								{/* <Link
 									href="/about"
 									
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
 									A Propos
-								</Link>
+								</Link> */}
 
 								<Link
-									href="/produits/produits"
+									href="/produits"
 									
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
 									Produits
 								</Link>
-								<Link
-									href="/services"
-									
-									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-								>
-									Services
-								</Link>
+							
 
 								<Link
 									href="/contact"
@@ -175,6 +150,22 @@ function Navbar() {
 								>
 									Contact
 								</Link>
+
+								{/* <NavDropdown
+              id="nav-dropdown"
+              title="About"
+              menuVariant="bleu"
+            >
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown> */}	
 							</div>
 						</div>
 					)}

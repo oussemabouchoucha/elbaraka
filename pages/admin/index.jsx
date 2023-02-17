@@ -55,7 +55,7 @@ const Login = () => {
       bg={useColorModeValue('gray.50', 'gray.800')}>
       <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
         <Stack align={'center'}>
-          <Heading fontSize={'4xl'}>Sign in to your account</Heading>
+          <Heading fontSize={'4xl'}>Connectez-vous à votre compte</Heading>
 
         </Stack>
         {
@@ -73,11 +73,11 @@ const Login = () => {
           p={8}>
           <Stack spacing={4}>
             <FormControl id="email">
-              <FormLabel>Email address</FormLabel>
+              <FormLabel>Adresse e-mail</FormLabel>
               <Input type="email" defaultValue="" onChange={(e) => setEmail(e.target.value)} />
             </FormControl>
             <FormControl id="password">
-              <FormLabel>Password</FormLabel>
+              <FormLabel>Mot de passe</FormLabel>
               <Input type="password" defaultValue="" onChange={(e) => setPassword(e.target.value)}/>
             </FormControl>
             <Stack spacing={10}>
@@ -86,7 +86,7 @@ const Login = () => {
                 align={'start'}
                 justify={'space-between'}>
                 
-                <Link className='text-blue-400' href='/admin/forgot_pass' >Forgot password?</Link>
+                <Link className='text-blue-400' href='/admin/forgot_pass' >Mot de passe oublié?</Link>
               </Stack>
               <Button
                 onClick={()=> loginFunction()}
@@ -95,7 +95,7 @@ const Login = () => {
                 _hover={{
                   bg: 'blue.500',
                 }}>
-                Sign in
+                S&apos;identifier
               </Button>
             </Stack>
           </Stack>

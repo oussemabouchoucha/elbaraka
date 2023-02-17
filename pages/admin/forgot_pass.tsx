@@ -32,7 +32,7 @@ const Forgot_pass = () => {
         }
       }).then(res => {setMessage(res.data.message)
         localStorage.setItem("email", email || "")
-        if(res.data.message == "Code reset password sent"){
+        if(res.data.message == "Mot de passe de réinitialisation du code envoyé"){
           router.push("/admin/VerifyEmail")
         }
       });
@@ -56,7 +56,7 @@ const Forgot_pass = () => {
             {
           message ? <>
           {
-            message == "Code reset password sent" ? <Alert status='success'>
+            message == "Mot de passe de réinitialisation du code envoyé" ? <Alert status='success'>
             <AlertIcon />
             <AlertTitle>{message}</AlertTitle>
           </Alert> : <Alert status='error'>
@@ -67,17 +67,17 @@ const Forgot_pass = () => {
           </> : <></>
         }
         <Heading lineHeight={1.1} fontSize={{ base: '2xl', md: '3xl' }}>
-          Forgot your password?
+        Mot de passe oublié?
         </Heading>
         <Text
           fontSize={{ base: 'sm', sm: 'md' }}
           color={useColorModeValue('gray.800', 'gray.400')}>
-          You&apos;ll get an email with a reset link
+          Vous recevrez un e-mail avec un lien de réinitialisation
         </Text>
         <FormControl id="email">
           <Input
             onChange={(e: any)=> setEmail(e.target.value)}
-            placeholder="your-email@example.com"
+            placeholder="votre-email@exemple.com"
             _placeholder={{ color: 'gray.500' }}
             type="email"
           />
@@ -90,7 +90,7 @@ const Forgot_pass = () => {
             _hover={{
               bg: 'blue.500',
             }}>
-            Request Reset
+            Demander une réinitialisation
           </Button>
         </Stack>
       </Stack>

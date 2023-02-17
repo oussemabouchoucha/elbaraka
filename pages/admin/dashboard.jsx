@@ -9,6 +9,25 @@ import {
     Alert,
     AlertIcon,
     AlertTitle,
+    Input,
+    Table,
+    TableContainer,
+    Thead,
+    Tr,
+    Th,
+    Tbody,
+    Td,
+    Popover,
+    PopoverTrigger,
+    PopoverContent,
+    PopoverHeader,
+    PopoverBody,
+    PopoverArrow,
+    PopoverCloseButton,
+    Tabs,
+    TabPanels,
+    TabPanel,
+    Flex,
   } from '@chakra-ui/react'
 
 const Dashboard = () => {
@@ -54,77 +73,120 @@ const Dashboard = () => {
 
     const search = (element) =>{
         let list = [...dataAux]
-        list = list.filter((e)=>e.message.toLowerCase().indexOf(element.toLowerCase()) > -1)
+        list = list.filter((e)=>e.message.toLowerCase().indexOf(element.toLowerCase()) > -1 || e.nom.toLowerCase().indexOf(element.toLowerCase()) > -1)
         setData(list)
     }
     return ( 
         <>
-            <div className="row">
-            <div className="col-1">
-                    <button className="btn btn-danger mt-5" onClick={()=>setData([...data].reverse())} >reverse</button>
+       
+            <div className='d-flex justify-content-around'>
+            <div >
+                    <button className="btn btn-primary mt-5" onClick={()=>setData([...data].reverse())} >Inverser par date</button>
                 </div>
-                <div className="col-1">
-                    <input className="form-control" type="search" onChange={(e) => search(e.target.value)}/>
+                <div >
+                    <Input placeholder='Recherche' className="form-control mt-5"  type="search" onChange={(e) => search(e.target.value)}/>
 
                 </div>    
-                <div className="col-1">
-                    <button className="btn btn-danger mt-5" onClick={() => logout()}>logout</button>
+                <div >
+                    <Button className="btn btn-danger mt-5 d-flex justify-content-end" onClick={() => logout()}>Se déconnecter</Button>
                 </div>
             </div>
+            
+            
+            
+            
         
             {
                 message ? 
                 <>
+                
                     <Alert status='error'>
                         <AlertIcon />
                         <AlertTitle>{message}</AlertTitle>
                     </Alert>
+                    
                 </> : 
-                <table className="table table-bordered w-100">
-                <thead className="w-100 table-secondary">
-                  <tr>
-                    <th>#</th>
-                    <th>Nom</th>
-                    <th>Prenom</th>
-                    <th>Email</th>
-                    <th>Code postal</th>
-                    <th>Adresse</th>
-                    <th>Ville</th>
-                    <th>Natel</th>
-                    <th>Sujet</th>
-                    <th>Message</th>
-                    <th onClick={()=>setData([...data].reverse())}>Date</th>
-                    <th>Terminé</th>
-                    <th>Marqué Terminée</th>
-                  </tr>
-                </thead>
-                <tbody className="w-100">
+                
+                <TableContainer>
+                <Table variant='simple'>
+                <Thead>
+                    
+                  <Tr>
+                    <Th>#</Th>
+                    <Th>Nom</Th>
+                    <Th>Prenom</Th>
+                    <Th>Email</Th>
+                    <Th>Code postal</Th>
+                    <Th>Adresse</Th>
+                    <Th>Ville</Th>
+                    <Th>Natel</Th>
+                    <Th>Produit</Th>
+                    <Th>Message</Th>
+                    <Th onClick={()=>setData([...data].reverse())}>Date</Th>
+                    <Th>Terminé</Th>
+                    <Th>Marqué Terminée</Th>
+                  </Tr>
+                </Thead>
+                <Tbody className="w-100">
                 {data.map((e, index) =>
-                    <tr key={index}>
-                        <td>{index}</td>
-                        <td>{e.nom} </td>
-                        <td>{e.prenom}</td>
-                        <td>{e.email}</td>
-                        <td>{e.code_postal}</td>
-                        <td>{e.adresse}</td>
-                        <td>{e.ville}</td>
-                        <td>{e.natel}</td>
-                        <td>{e.sujet}</td>
-                        <td>{e.message}</td>
-                        <td>{moment(e.createdAt).format('MMMM Do YYYY, h:mm:ss a')}</td>
-                        <td>
+                    <Tr key={index}>
+                        <Td>{index+1}</Td>
+                        <Td>{e.nom} </Td>
+                        <Td>{e.prenom}</Td>
+                        <Td>{e.email}</Td>
+                        <Td>{e.code_postal}</Td>
+                        <Td>{e.adresse}</Td>
+                        <Td>{e.ville}</Td>
+                        <Td>{e.natel}</Td>
+                        <Td><textarea name="" id="" cols="24" >
+                    {e.produit}
+                    </textarea></Td>
+                        <Td >
+                        <Flex justifyContent="center" mt={4}>
+        <Popover placement="bottom" isLazy>
+          <PopoverTrigger>
+            <Button
+              className="btn btn-secondary">
+              Voir
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent _focus={{ boxShadown: 'none' }}>
+            <PopoverArrow />
+            <PopoverCloseButton />
+            <PopoverHeader fontWeight="bold">MESSAGE</PopoverHeader>
+            <PopoverBody w="full">
+              <Tabs isLazy colorScheme="green">
+               
+                <TabPanels >
+                  <TabPanel>
+                    <textarea name="" id="" cols="28" rows="10">
+                    {e.message}
+                    </textarea>
+                    
+                  </TabPanel>
+                </TabPanels>
+              </Tabs>
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
+      </Flex>
+                            </Td>
+                         
+                        <Td>{moment(e.createdAt).format('MMMM Do YYYY, h:mm:ss a')}</Td>
+                        <Td>
                             {
                                 e.is_done ? <Badge bg="success" className="table-secondary">OUI</Badge> : <Badge bg="danger">NON</Badge>
                             }
-                        </td>
-                        <td><Button onClick={() => update(e._id)}>
-                                update
-                            </Button></td>
-                    </tr>
+                        </Td>
+                        <Td><Button onClick={() => update(e._id)}>
+                        mettre à jour
+                            </Button></Td>
+                    </Tr>
+                    
                 )}
-                </tbody>
-              </table>
-                
+                </Tbody>
+              </Table>
+              </TableContainer>
             }
 
              

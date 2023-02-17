@@ -29,10 +29,7 @@ const devisSchema = new mongoose.Schema({
         type: String,
         required: false
     },
-    sujet: {
-        type: String,
-        required: false
-    },
+   
     message:{
         type: String,
         required: false
@@ -44,7 +41,13 @@ const devisSchema = new mongoose.Schema({
     is_done: {
         type: Boolean,
         default: false
-    }
+    },
+
+    produit:{
+        type: Array,
+        required: true
+    },
+   
 })
 
 let Devis = mongoose.model('Devis', devisSchema)

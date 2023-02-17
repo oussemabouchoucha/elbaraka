@@ -4,7 +4,6 @@ import {
   FormControl,
   Flex,
   Stack,
-  useColorModeValue,
   HStack,
   Input
 } from '@chakra-ui/react';
@@ -77,12 +76,12 @@ export default function VerifyEmailForm() {
         my={10}>
         <Center>
           <Heading lineHeight={1.1} fontSize={{ base: '2xl', md: '3xl' }}>
-            Change password
+          Changer le mot de passe
           </Heading>
         </Center>
         <Center
           fontSize={{ base: 'sm', sm: 'md' }}>
-          New password for this email
+          Nouveau mot de passe pour cet e-mail
         </Center>
         <Center
           fontSize={{ base: 'sm', sm: 'md' }}
@@ -109,7 +108,7 @@ export default function VerifyEmailForm() {
             }}
             onClick={()=> change()}
             >
-            Change password
+            Changer le mot de passe
           </Button>
         </Stack>
       </Stack>
@@ -129,12 +128,12 @@ export default function VerifyEmailForm() {
         my={10}>
         <Center>
           <Heading lineHeight={1.1} fontSize={{ base: '2xl', md: '3xl' }}>
-            Verify your Email
+          Vérifiez votre e-mail
           </Heading>
         </Center>
         <Center
           fontSize={{ base: 'sm', sm: 'md' }}>
-          We have sent code to your email
+          Nous avons envoyé le code à votre adresse Email
         </Center>
         <Center
           fontSize={{ base: 'sm', sm: 'md' }}
@@ -162,7 +161,7 @@ export default function VerifyEmailForm() {
             }}
             onClick={()=> verif()}
             >
-            Verify
+            Vérifier
           </Button>
         </Stack>
       </Stack>

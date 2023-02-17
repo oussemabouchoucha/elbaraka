@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "test": "mocha"
+
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "assert": "^2.0.0",
     "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.20.1",
     "cors": "^2.8.5",
@@ -16,6 +19,7 @@
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "generate-password": "^1.7.0",
+    "mocha": "^10.2.0",
     "mongoose": "^6.8.4",
     "nodemailer": "^6.9.0",
     "passport": "^0.6.0",

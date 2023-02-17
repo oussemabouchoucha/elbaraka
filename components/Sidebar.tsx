@@ -30,12 +30,11 @@ interface LinkItemProps {
 const LinkItems: Array<LinkItemProps> = [
   { name: 'Photovoltaïques', icon: FiCornerDownRight, link: '/produits/photovoltaiques'},
   { name: 'Pompe à chaleur', icon: FiCornerDownRight, link: '/produits/pompe' },
-  { name: 'Chauffage solaire / chauffe-eau solaire ', icon: FiCornerDownRight, link: '/produits/chauffage_solaire' },
+  // { name: 'Chauffage solaire / chauffe-eau solaire ', icon: FiCornerDownRight, link: '/produits/chauffage_solaire' },
   { name: 'Chauffe-eau thermodynamique', icon: FiCornerDownRight, link: '/produits/chauffe_eau' },
-  { name: 'Isolation', icon: FiCornerDownRight, link: '/produits/photovoltaiques' },
 ];
 
-export default function produits({ children }: { children: ReactNode }) {
+export default function Produits({ children }: { children: ReactNode }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box minH="100vh" bg={useColorModeValue('gray.100', 'gray.900')}>
