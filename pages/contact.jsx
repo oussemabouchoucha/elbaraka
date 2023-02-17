@@ -41,7 +41,7 @@ const Contact = () => {
     try {
       console.log(initValues)
       const res_ax = await axios({
-        url : '/api/devis/save', 
+        url : '/back/devis/save', 
         method: 'post',
         data:{
           nom : values.name,

@@ -29,7 +29,7 @@ const Login = () => {
     const [message, setMessage ] = useState()
     const loginFunction = async () =>{
       const res_ax = await axios({
-        url : '/api/users/login', 
+        url : '/back/users/login', 
         method: 'post',
         data:{
           email: email,
