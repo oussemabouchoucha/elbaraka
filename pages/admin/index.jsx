@@ -29,7 +29,7 @@ const Login = () => {
     const [message, setMessage ] = useState()
     const loginFunction = async () =>{
       const res_ax = await axios({
-        url : 'http://localhost:5000/users/login', 
+        url : '/api/users/login', 
         method: 'post',
         data:{
           email: email,

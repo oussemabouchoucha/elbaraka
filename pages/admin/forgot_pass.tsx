@@ -25,7 +25,7 @@ const Forgot_pass = () => {
     const [message, setMessage] = useState()
     const forgetFunction = async () => {
       const res_ax = await axios({
-        url : 'http://localhost:5000/users/forgotPassword', 
+        url : '/api/users/forgotPassword', 
         method: 'post',
         data:{
           email: email

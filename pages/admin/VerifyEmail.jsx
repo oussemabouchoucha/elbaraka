@@ -31,7 +31,7 @@ export default function VerifyEmailForm() {
     const code = code1 + code2 + code3 + code4
     console.log(code)
     const res_ax = await axios({
-      url : 'http://localhost:5000/users/verifCode', 
+      url : '/api/users/verifCode', 
       method: 'post',
       data:{
         email: email,
@@ -46,7 +46,7 @@ export default function VerifyEmailForm() {
   const change =async () => {
     const email = localStorage.getItem("email")
     const res_ax = await axios({
-      url : 'http://localhost:5000/users/changePassword', 
+      url : '/api/users/changePassword', 
       method: 'patch',
       data:{
         email: email,

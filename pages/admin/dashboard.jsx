@@ -41,7 +41,7 @@ const Dashboard = () => {
         router.push('/admin')
     }
     const getData = async () => {
-        const { data } = await axios.get(`http://localhost:5000/devis/getAll`);
+        const { data } = await axios.get(`/api/devis/getAll`);
         const permission = await localStorage.getItem("login")
         if(!permission || permission === "false"){
             setMessage("Veuillez vous connecter pour obtenir des données !")
@@ -57,7 +57,7 @@ const Dashboard = () => {
     },[]);
 
     const update = async (id) =>{
-        await axios.patch(`http://localhost:5000/devis/update/${id}`, {
+        await axios.patch(`/api/devis/update/${id}`, {
             headers: {
                 "Content-Type": "application/json",
             },
