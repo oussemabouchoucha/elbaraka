@@ -15,7 +15,7 @@ function Navbar() {
 							<Link href="/">
 							<div className="flex justify-center items-center flex-shrink-0 ">
 								<h1 className=" font-bold text-xl cursor-pointer">
-								AlBaraka<span className="text-blue-500">Services</span>
+								Energie<span className="text-blue-500">Devis</span>
 								</h1>
 							</div></Link>
 							<div className="hidden md:block">
