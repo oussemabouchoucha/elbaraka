@@ -1,0 +1,121 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/M6mYXs1vShit-7m9ppAbT/_buildManifest.js",
+    "static/M6mYXs1vShit-7m9ppAbT/_ssgManifest.js"
+  ],
+  "rootMainFiles": [],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-62c02dad1a6a4cb4.js",
+      "static/chunks/framework-114634acb84f8baa.js",
+      "static/chunks/main-010ff0b6bbe5ac8f.js",
+      "static/chunks/b98bc7c3-36941e10485d95ac.js",
+      "static/chunks/197-814fe40e04a2d10d.js",
+      "static/chunks/pages/index-f9bbe4655280a3a2.js"
+    ],
+    "/Home": [
+      "static/chunks/webpack-62c02dad1a6a4cb4.js",
+      "static/chunks/framework-114634acb84f8baa.js",
+      "static/chunks/main-010ff0b6bbe5ac8f.js",
+      "static/chunks/b98bc7c3-36941e10485d95ac.js",
+      "static/chunks/197-814fe40e04a2d10d.js",
+      "static/chunks/pages/Home-f01d9eb9c71493f6.js"
+    ],
+    "/Home/cards": [
+      "static/chunks/webpack-62c02dad1a6a4cb4.js",
+      "static/chunks/framework-114634acb84f8baa.js",
+      "static/chunks/main-010ff0b6bbe5ac8f.js",
+      "static/chunks/pages/Home/cards-0c1201b091dc5056.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-62c02dad1a6a4cb4.js",
+      "static/chunks/framework-114634acb84f8baa.js",
+      "static/chunks/main-010ff0b6bbe5ac8f.js",
+      "static/css/8386f614908422c2.css",
+      "static/chunks/pages/_app-12f248d1c2fabf32.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-62c02dad1a6a4cb4.js",
+      "static/chunks/framework-114634acb84f8baa.js",
+      "static/chunks/main-010ff0b6bbe5ac8f.js",
+      "static/chunks/pages/_error-8353112a01355ec2.js"
+    ],
+    "/admin": [
+      "static/chunks/webpack-62c02dad1a6a4cb4.js",
+      "static/chunks/framework-114634acb84f8baa.js",
+      "static/chunks/main-010ff0b6bbe5ac8f.js",
+      "static/chunks/292-4e57720df77d8ccd.js",
+      "static/chunks/pages/admin-4dcd75e4b96bc7e1.js"
+    ],
+    "/admin/VerifyEmail": [
+      "static/chunks/webpack-62c02dad1a6a4cb4.js",
+      "static/chunks/framework-114634acb84f8baa.js",
+      "static/chunks/main-010ff0b6bbe5ac8f.js",
+      "static/chunks/292-4e57720df77d8ccd.js",
+      "static/chunks/pages/admin/VerifyEmail-d6eb1ca46e427277.js"
+    ],
+    "/admin/dashboard": [
+      "static/chunks/webpack-62c02dad1a6a4cb4.js",
+      "static/chunks/framework-114634acb84f8baa.js",
+      "static/chunks/main-010ff0b6bbe5ac8f.js",
+      "static/chunks/75fc9c18-0cf132890bf6dedc.js",
+      "static/chunks/292-4e57720df77d8ccd.js",
+      "static/chunks/165-59e48fb45167dd0c.js",
+      "static/chunks/pages/admin/dashboard-913f5e73d3ad4a9e.js"
+    ],
+    "/admin/forgot_pass": [
+      "static/chunks/webpack-62c02dad1a6a4cb4.js",
+      "static/chunks/framework-114634acb84f8baa.js",
+      "static/chunks/main-010ff0b6bbe5ac8f.js",
+      "static/chunks/292-4e57720df77d8ccd.js",
+      "static/chunks/pages/admin/forgot_pass-e08ec687443d1e91.js"
+    ],
+    "/contact": [
+      "static/chunks/webpack-62c02dad1a6a4cb4.js",
+      "static/chunks/framework-114634acb84f8baa.js",
+      "static/chunks/main-010ff0b6bbe5ac8f.js",
+      "static/chunks/292-4e57720df77d8ccd.js",
+      "static/chunks/pages/contact-e57ba54b0ec9ec15.js"
+    ],
+    "/produits": [
+      "static/chunks/webpack-62c02dad1a6a4cb4.js",
+      "static/chunks/framework-114634acb84f8baa.js",
+      "static/chunks/main-010ff0b6bbe5ac8f.js",
+      "static/chunks/704-21a5530ddf682277.js",
+      "static/chunks/pages/produits-657cc0608248ef96.js"
+    ],
+    "/produits/chauffe_eau": [
+      "static/chunks/webpack-62c02dad1a6a4cb4.js",
+      "static/chunks/framework-114634acb84f8baa.js",
+      "static/chunks/main-010ff0b6bbe5ac8f.js",
+      "static/chunks/704-21a5530ddf682277.js",
+      "static/chunks/pages/produits/chauffe_eau-2d798ef98ed8653d.js"
+    ],
+    "/produits/photovoltaiques": [
+      "static/chunks/webpack-62c02dad1a6a4cb4.js",
+      "static/chunks/framework-114634acb84f8baa.js",
+      "static/chunks/main-010ff0b6bbe5ac8f.js",
+      "static/chunks/704-21a5530ddf682277.js",
+      "static/chunks/pages/produits/photovoltaiques-6e85c2e7fa8af436.js"
+    ],
+    "/produits/pompe": [
+      "static/chunks/webpack-62c02dad1a6a4cb4.js",
+      "static/chunks/framework-114634acb84f8baa.js",
+      "static/chunks/main-010ff0b6bbe5ac8f.js",
+      "static/chunks/704-21a5530ddf682277.js",
+      "static/chunks/pages/produits/pompe-46b9ca027b715b31.js"
+    ],
+    "/test": [
+      "static/chunks/webpack-62c02dad1a6a4cb4.js",
+      "static/chunks/framework-114634acb84f8baa.js",
+      "static/chunks/main-010ff0b6bbe5ac8f.js",
+      "static/chunks/pages/test-d77628273881c477.js"
+    ]
+  },
+  "ampFirstPages": []
+}

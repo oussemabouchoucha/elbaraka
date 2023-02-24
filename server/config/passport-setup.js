@@ -63,7 +63,7 @@ passport.use('local.login', new localStrategy({
             return done(err)
         } 
         if(!user) {
-            return done(null, false,{'error': "l'utilisateur n'a pas été trouvé"})
+            return done(null, false,{'error': "L 'utilisateur n'a pas été trouvé !"})
         }
         if (user) {
             if (user.comparePasswords(password, user.password)) {
@@ -71,7 +71,7 @@ passport.use('local.login', new localStrategy({
                 return done(null,user,{'info' : ' Bienvenu'})
 
             } else {
-                return done(null,false, {'error' : ' le mot de passe est erroné'})
+                return done(null,false, {'error' : 'Le mot de passe est erroné !'})
 
             }
         }

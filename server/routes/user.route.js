@@ -18,7 +18,9 @@ isAuthenticated = (req,res,next) => {
 const { EMAIL_PASS,EMAIL } = process.env
 
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp.zoho.com',
+    secure: true,
+    port: 465,
     auth: {
         user: EMAIL,
         pass: EMAIL_PASS
@@ -69,7 +71,7 @@ router.post('/forgotPassword',(req,res)=>{
     else {
         User.findOne({email: req.body.email},async (err,user)=>{
             if (err) throw err
-            if (!user) return res.json({message: "User not found"})
+            if (!user) return res.json({message: "L 'utilisateur n'a pas été trouvé !"})
             if (user) {
                 var code = generator.generate({
                     length: 4,
@@ -82,7 +84,7 @@ router.post('/forgotPassword',(req,res)=>{
                 var options = {
                     from: EMAIL,
                     to: req.body.email,
-                    subject: 'Password Reset',
+                    subject: 'Réinitialisation mot de passe',
                     text: 'code : '+ code
                 }
                 transporter.sendMail(options, (err, info) => {
@@ -104,18 +106,18 @@ router.post('/forgotPassword',(req,res)=>{
 router.post('/verifCode',(req,res)=>{
     User.findOne({email: req.body.email},async (err,user)=>{
         if (err) throw err
-        if (!user) {res.json({message: "User not found"})}
+        if (!user) {res.json({message: "L 'utilisateur n'a pas été trouvé !"})}
         if (user) {
             if (user.codeVerification == req.body.code) {
                 res.json({
                     status: 'success',
-                    message: 'Code verified'
+                    message: 'Code verifiée'
                 })
             }
             else {
                 res.json({
                     status: 'error',
-                    message: 'Code not verified'
+                    message: 'Code n est pas verifié !'
                 })
             }
         }
@@ -124,7 +126,7 @@ router.post('/verifCode',(req,res)=>{
 router.patch('/changePassword',(req,res)=>{
     User.findOne({email: req.body.email},async (err,user)=>{
         if (err) throw err
-        if (!user) {res.json({message: "User not found"})}
+        if (!user) {res.json({message: "L 'utilisateur n'a pas été trouvé !"})}
         if (user) {
             const newUser = user
             newUser.password = newUser.hashPassword(req.body.password)
@@ -132,7 +134,7 @@ router.patch('/changePassword',(req,res)=>{
                 if (err) return res.json(err)
                 res.json({
                     status:'success',
-                    message: 'Password changed'
+                    message: 'Mot de passe changée'
                 })
             })
         }
